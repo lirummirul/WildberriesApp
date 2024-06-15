@@ -11,6 +11,8 @@
 		45FD56FA2C1E073D00908848 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD56F92C1E073D00908848 /* ContentView.swift */; };
 		45FD56FC2C1E073F00908848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FD56FB2C1E073F00908848 /* Assets.xcassets */; };
 		45FD56FF2C1E073F00908848 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FD56FE2C1E073F00908848 /* Preview Assets.xcassets */; };
+		45FD57062C1E098000908848 /* ОnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD57052C1E098000908848 /* ОnboardingView.swift */; };
+		45FD57082C1E1D9400908848 /* TappableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD57072C1E1D9400908848 /* TappableText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		45FD56F92C1E073D00908848 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45FD56FB2C1E073F00908848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45FD56FE2C1E073F00908848 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45FD57052C1E098000908848 /* ОnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ОnboardingView.swift"; sourceTree = "<group>"; };
+		45FD57072C1E1D9400908848 /* TappableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				45FD56F72C1E073D00908848 /* WildberriesAppApp.swift */,
 				45FD56F92C1E073D00908848 /* ContentView.swift */,
+				45FD57052C1E098000908848 /* ОnboardingView.swift */,
+				45FD57072C1E1D9400908848 /* TappableText.swift */,
 				45FD56FB2C1E073F00908848 /* Assets.xcassets */,
 				45FD56FD2C1E073F00908848 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				45FD56FA2C1E073D00908848 /* ContentView.swift in Sources */,
 				45FD56F82C1E073D00908848 /* WildberriesAppApp.swift in Sources */,
+				45FD57062C1E098000908848 /* ОnboardingView.swift in Sources */,
+				45FD57082C1E1D9400908848 /* TappableText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
