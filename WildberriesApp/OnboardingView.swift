@@ -11,6 +11,9 @@ import SwiftUI
 struct ОnboardingView: View {
     @State private var isActive = false
     @Environment(\.colorScheme) var colorScheme
+    
+    let color = Color(CGColor(red: 38/255, green: 26/255, blue: 57/255, alpha: 1))
+    let colorDark = Color(CGColor(red: 130/255, green: 7/255, blue: 232/255, alpha: 1))
 
     var body: some View {
         VStack {
@@ -31,7 +34,7 @@ struct ОnboardingView: View {
                 .font(.system(size: 25))
                 .bold()
                 .multilineTextAlignment(.center)
-                .foregroundColor(colorScheme == .dark ? Color.gray : Color.gray.opacity(0.5))
+                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                 .padding(.top, 30)
                 .padding(.bottom, 100)
             
@@ -60,13 +63,12 @@ struct ОnboardingView: View {
             .font(.system(size: 20))
             .frame(width: 300, height: 20)
             .padding()
-            .background(Color.purple)
+            .background(colorScheme == .dark ? colorDark : Color.purple)
             .cornerRadius(30)
         }
-        .fullScreenCover(isPresented: $isActive) {
-            ContentView()
-        }
-        .background(colorScheme == .dark ? Color.black : Color.white)
+        .sheet(isPresented: $isActive) { SheetView() }
+        .background(colorScheme == .dark ? color : Color.white)
+//        .edgesIgnoringSafeArea(.all)
     }
 }
 
