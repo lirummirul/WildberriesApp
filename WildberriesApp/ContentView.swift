@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color("backgroundColor").edgesIgnoringSafeArea(.all)
             ОnboardingView()
                 .environment(\.colorScheme, .dark)
         }
