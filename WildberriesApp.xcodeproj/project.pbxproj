@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070D19862C35B8C500892729 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19852C35B8C500892729 /* TabBarItem.swift */; };
+		070D19882C36AAEA00892729 /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19872C36AAEA00892729 /* TabType.swift */; };
+		070D198A2C36AD3800892729 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19892C36AD3800892729 /* SearchTextField.swift */; };
+		075B19CE2C31BF740026EEDE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19CD2C31BF740026EEDE /* Contact.swift */; };
+		075B19D02C31C2C50026EEDE /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19CF2C31C2C50026EEDE /* ContactDetailView.swift */; };
+		075B19D32C320B280026EEDE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19D22C320B280026EEDE /* TabBarView.swift */; };
+		075B19D62C320B7E0026EEDE /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19D52C320B7E0026EEDE /* ChatsView.swift */; };
+		075B19D92C320B920026EEDE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19D82C320B920026EEDE /* ProfileView.swift */; };
+		07A20A482C31B09B0090B2E3 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A20A472C31B09B0090B2E3 /* ContactsView.swift */; };
 		45DCE1EC2C1F625A003C33CF /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DCE1EB2C1F625A003C33CF /* SheetView.swift */; };
 		45FD56F82C1E073D00908848 /* WildberriesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD56F72C1E073D00908848 /* WildberriesAppApp.swift */; };
 		45FD56FA2C1E073D00908848 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD56F92C1E073D00908848 /* ContentView.swift */; };
@@ -17,6 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		070D19852C35B8C500892729 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		070D19872C36AAEA00892729 /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
+		070D19892C36AD3800892729 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		075B19CD2C31BF740026EEDE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		075B19CF2C31C2C50026EEDE /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		075B19D22C320B280026EEDE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		075B19D52C320B7E0026EEDE /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		075B19D82C320B920026EEDE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		07A20A472C31B09B0090B2E3 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		45DCE1EB2C1F625A003C33CF /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		45FD56F42C1E073D00908848 /* WildberriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildberriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FD56F72C1E073D00908848 /* WildberriesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildberriesAppApp.swift; sourceTree = "<group>"; };
@@ -38,6 +56,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075B19CC2C31BF640026EEDE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				075B19CD2C31BF740026EEDE /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		075B19D12C320B150026EEDE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				075B19D22C320B280026EEDE /* TabBarView.swift */,
+				070D19852C35B8C500892729 /* TabBarItem.swift */,
+				070D19872C36AAEA00892729 /* TabType.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		075B19D42C320B700026EEDE /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				075B19D52C320B7E0026EEDE /* ChatsView.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		075B19D72C320B840026EEDE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				075B19D82C320B920026EEDE /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		075B19DA2C320B970026EEDE /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				07A20A472C31B09B0090B2E3 /* ContactsView.swift */,
+				075B19CF2C31C2C50026EEDE /* ContactDetailView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		07A20A452C3192980090B2E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07A20A4A2C31B26D0090B2E3 /* Contact */,
+				07A20A492C31B1F30090B2E3 /* Onboarding */,
+				45FD56F92C1E073D00908848 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07A20A492C31B1F30090B2E3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				45FD57052C1E098000908848 /* OnboardingView.swift */,
+				45DCE1EB2C1F625A003C33CF /* SheetView.swift */,
+				45FD57072C1E1D9400908848 /* TappableText.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		07A20A4A2C31B26D0090B2E3 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				075B19DA2C320B970026EEDE /* Contacts */,
+				075B19D72C320B840026EEDE /* Profile */,
+				075B19D42C320B700026EEDE /* Chats */,
+				075B19D12C320B150026EEDE /* TabBar */,
+				070D19892C36AD3800892729 /* SearchTextField.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
 		45FD56EB2C1E073D00908848 = {
 			isa = PBXGroup;
 			children = (
@@ -57,13 +150,11 @@
 		45FD56F62C1E073D00908848 /* WildberriesApp */ = {
 			isa = PBXGroup;
 			children = (
-				45FD56F72C1E073D00908848 /* WildberriesAppApp.swift */,
-				45FD56F92C1E073D00908848 /* ContentView.swift */,
-				45FD57052C1E098000908848 /* OnboardingView.swift */,
-				45DCE1EB2C1F625A003C33CF /* SheetView.swift */,
-				45FD57072C1E1D9400908848 /* TappableText.swift */,
-				45FD56FB2C1E073F00908848 /* Assets.xcassets */,
 				45FD56FD2C1E073F00908848 /* Preview Content */,
+				075B19CC2C31BF640026EEDE /* Models */,
+				07A20A452C3192980090B2E3 /* View */,
+				45FD56F72C1E073D00908848 /* WildberriesAppApp.swift */,
+				45FD56FB2C1E073F00908848 /* Assets.xcassets */,
 			);
 			path = WildberriesApp;
 			sourceTree = "<group>";
@@ -148,9 +239,18 @@
 			files = (
 				45FD56FA2C1E073D00908848 /* ContentView.swift in Sources */,
 				45FD56F82C1E073D00908848 /* WildberriesAppApp.swift in Sources */,
+				075B19D62C320B7E0026EEDE /* ChatsView.swift in Sources */,
 				45DCE1EC2C1F625A003C33CF /* SheetView.swift in Sources */,
+				07A20A482C31B09B0090B2E3 /* ContactsView.swift in Sources */,
+				075B19D02C31C2C50026EEDE /* ContactDetailView.swift in Sources */,
+				070D19862C35B8C500892729 /* TabBarItem.swift in Sources */,
+				070D198A2C36AD3800892729 /* SearchTextField.swift in Sources */,
 				45FD57062C1E098000908848 /* OnboardingView.swift in Sources */,
 				45FD57082C1E1D9400908848 /* TappableText.swift in Sources */,
+				075B19D32C320B280026EEDE /* TabBarView.swift in Sources */,
+				075B19D92C320B920026EEDE /* ProfileView.swift in Sources */,
+				075B19CE2C31BF740026EEDE /* Contact.swift in Sources */,
+				070D19882C36AAEA00892729 /* TabType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            ОnboardingView()
+//            ОnboardingView()
+//                .environment(\.colorScheme, .dark)
+            TabBarView()
                 .environment(\.colorScheme, .dark)
         }
     }
