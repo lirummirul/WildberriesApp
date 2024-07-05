@@ -55,11 +55,9 @@ struct ContactsView: View {
                                         .font(.headline)
                                         .foregroundColor(colorScheme == .dark ? .white : .black)
                                 }
-                                if let status = contact.status {
-                                    Text(status)
-                                        .font(.subheadline)
-                                        .foregroundColor(.gray)
-                                }
+                                Text(getLastVisit(date: contact.status))
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
                             }
                         }
                     }
@@ -97,6 +95,25 @@ struct ContactsView: View {
             .clipShape(RoundedRectangle(cornerRadius: 16.0))
             .foregroundColor(.white)
             .bold()
+    }
+    
+    private func getLastVisit(date: Date) -> String {
+        let calendar = Calendar.current
+        let now = Date()
+        let components = calendar.dateComponents([.second, .minute, .hour, .day], from: date, to: now)
+        
+        if calendar.isDateInToday(date) {
+            if components.second! < 5 && components.minute == 0 && components.hour == 0 {
+                return "Online"
+            } else if components.minute! < 60 && components.hour == 0 {
+                return "Last seen \(components.minute!) minutes ago"
+            } else if components.hour! < 24 {
+                return "Last seen \(components.hour!) hours ago"
+            }
+        } else if calendar.isDateInYesterday(date) {
+            return "Last seen yesterday"
+        }
+        return "Last seen \(components.day!) days ago"
     }
     
     

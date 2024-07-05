@@ -31,7 +31,7 @@ struct SearchTextField: View {
         .font(Font.custom("Montserrat-Medium", size: 15))
         .cornerRadius(10)
         .padding(.leading, 20)
-        .foregroundColor(colorScheme == .dark ? .black : .white)
+        .foregroundColor(colorScheme == .dark ? .white : .black)
         .padding(.trailing, 20)
     }
 }
