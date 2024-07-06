@@ -97,7 +97,7 @@ struct ContactsView: View {
             .bold()
     }
     
-    private func getLastVisit(date: Date) -> String {
+    public func getLastVisit(date: Date) -> String {
         let calendar = Calendar.current
         let now = Date()
         let components = calendar.dateComponents([.second, .minute, .hour, .day], from: date, to: now)

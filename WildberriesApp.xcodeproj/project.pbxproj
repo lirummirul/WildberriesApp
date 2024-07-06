@@ -19,6 +19,11 @@
 		070D199F2C371E6B00892729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070D199E2C371E6B00892729 /* Assets.xcassets */; };
 		070D19A32C371E6B00892729 /* WBWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 070D198F2C371E6900892729 /* WBWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		070D19AB2C37FA5700892729 /* WBWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19A92C37FA4F00892729 /* WBWidgetEntryView.swift */; };
+		070D19AC2C38130B00892729 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19CD2C31BF740026EEDE /* Contact.swift */; };
+		070D19B12C381C1900892729 /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19B02C381C1900892729 /* ContactStore.swift */; };
+		070D19B22C381C4A00892729 /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19B02C381C1900892729 /* ContactStore.swift */; };
+		0735C7382C381E4D00EE75B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FD56FB2C1E073F00908848 /* Assets.xcassets */; };
+		0735C7392C39CD4700EE75B7 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19CF2C31C2C50026EEDE /* ContactDetailView.swift */; };
 		075B19CE2C31BF740026EEDE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19CD2C31BF740026EEDE /* Contact.swift */; };
 		075B19D02C31C2C50026EEDE /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19CF2C31C2C50026EEDE /* ContactDetailView.swift */; };
 		075B19D32C320B280026EEDE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19D22C320B280026EEDE /* TabBarView.swift */; };
@@ -56,6 +61,16 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0735C74D2C39DAF100EE75B7 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +87,10 @@
 		070D199E2C371E6B00892729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		070D19A02C371E6B00892729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		070D19A92C37FA4F00892729 /* WBWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidgetEntryView.swift; sourceTree = "<group>"; };
+		070D19B02C381C1900892729 /* ContactStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStore.swift; sourceTree = "<group>"; };
+		0735C7422C39DAF100EE75B7 /* OpenChatIntentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatIntentExtension.swift; sourceTree = "<group>"; };
+		0735C7442C39DAF100EE75B7 /* OpenChatIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatIntent.swift; sourceTree = "<group>"; };
+		0735C7462C39DAF100EE75B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075B19CD2C31BF740026EEDE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		075B19CF2C31C2C50026EEDE /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 		075B19D22C320B280026EEDE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -131,17 +150,21 @@
 			path = WBWidget;
 			sourceTree = "<group>";
 		};
-		070D19A82C371E7C00892729 /* Intents */ = {
+		0735C7412C39DAF100EE75B7 /* OpenChatIntent */ = {
 			isa = PBXGroup;
 			children = (
+				0735C7422C39DAF100EE75B7 /* OpenChatIntentExtension.swift */,
+				0735C7442C39DAF100EE75B7 /* OpenChatIntent.swift */,
+				0735C7462C39DAF100EE75B7 /* Info.plist */,
 			);
-			path = Intents;
+			path = OpenChatIntent;
 			sourceTree = "<group>";
 		};
 		075B19CC2C31BF640026EEDE /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				075B19CD2C31BF740026EEDE /* Contact.swift */,
+				070D19B02C381C1900892729 /* ContactStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,6 +241,7 @@
 			children = (
 				45FD56F62C1E073D00908848 /* WildberriesApp */,
 				070D19952C371E6900892729 /* WBWidget */,
+				0735C7412C39DAF100EE75B7 /* OpenChatIntent */,
 				070D19902C371E6900892729 /* Frameworks */,
 				45FD56F52C1E073D00908848 /* Products */,
 			);
@@ -235,7 +259,6 @@
 		45FD56F62C1E073D00908848 /* WildberriesApp */ = {
 			isa = PBXGroup;
 			children = (
-				070D19A82C371E7C00892729 /* Intents */,
 				45FD56FD2C1E073F00908848 /* Preview Content */,
 				075B19CC2C31BF640026EEDE /* Models */,
 				07A20A452C3192980090B2E3 /* View */,
@@ -281,6 +304,7 @@
 				45FD56F12C1E073D00908848 /* Frameworks */,
 				45FD56F22C1E073D00908848 /* Resources */,
 				070D19A72C371E6B00892729 /* Embed Foundation Extensions */,
+				0735C74D2C39DAF100EE75B7 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
@@ -334,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0735C7382C381E4D00EE75B7 /* Assets.xcassets in Resources */,
 				070D199F2C371E6B00892729 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,10 +379,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070D19AC2C38130B00892729 /* Contact.swift in Sources */,
 				070D199B2C371E6900892729 /* WBWidget.swift in Sources */,
 				070D199D2C371E6900892729 /* AppIntent.swift in Sources */,
 				070D19972C371E6900892729 /* WBWidgetBundle.swift in Sources */,
+				0735C7392C39CD4700EE75B7 /* ContactDetailView.swift in Sources */,
 				070D19992C371E6900892729 /* WBWidgetLiveActivity.swift in Sources */,
+				070D19B22C381C4A00892729 /* ContactStore.swift in Sources */,
 				070D19AB2C37FA5700892729 /* WBWidgetEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +398,7 @@
 				45FD56F82C1E073D00908848 /* WildberriesAppApp.swift in Sources */,
 				075B19D62C320B7E0026EEDE /* ChatsView.swift in Sources */,
 				45DCE1EC2C1F625A003C33CF /* SheetView.swift in Sources */,
+				070D19B12C381C1900892729 /* ContactStore.swift in Sources */,
 				07A20A482C31B09B0090B2E3 /* ContactsView.swift in Sources */,
 				075B19D02C31C2C50026EEDE /* ContactDetailView.swift in Sources */,
 				070D19862C35B8C500892729 /* TabBarItem.swift in Sources */,
