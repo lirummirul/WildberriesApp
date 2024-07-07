@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		070D19862C35B8C500892729 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19852C35B8C500892729 /* TabBarItem.swift */; };
+		070D19882C36AAEA00892729 /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19872C36AAEA00892729 /* TabType.swift */; };
+		070D198A2C36AD3800892729 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19892C36AD3800892729 /* SearchTextField.swift */; };
+		070D19922C371E6900892729 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070D19912C371E6900892729 /* WidgetKit.framework */; };
+		070D19942C371E6900892729 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070D19932C371E6900892729 /* SwiftUI.framework */; };
+		070D19972C371E6900892729 /* WBWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19962C371E6900892729 /* WBWidgetBundle.swift */; };
+		070D19992C371E6900892729 /* WBWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19982C371E6900892729 /* WBWidgetLiveActivity.swift */; };
+		070D199B2C371E6900892729 /* WBWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D199A2C371E6900892729 /* WBWidget.swift */; };
+		070D199D2C371E6900892729 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D199C2C371E6900892729 /* AppIntent.swift */; };
+		070D199F2C371E6B00892729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070D199E2C371E6B00892729 /* Assets.xcassets */; };
+		070D19A32C371E6B00892729 /* WBWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 070D198F2C371E6900892729 /* WBWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		070D19AB2C37FA5700892729 /* WBWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19A92C37FA4F00892729 /* WBWidgetEntryView.swift */; };
+		070D19AC2C38130B00892729 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19CD2C31BF740026EEDE /* Contact.swift */; };
+		070D19B12C381C1900892729 /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19B02C381C1900892729 /* ContactStore.swift */; };
+		070D19B22C381C4A00892729 /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D19B02C381C1900892729 /* ContactStore.swift */; };
+		0735C7382C381E4D00EE75B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FD56FB2C1E073F00908848 /* Assets.xcassets */; };
+		0735C7392C39CD4700EE75B7 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19CF2C31C2C50026EEDE /* ContactDetailView.swift */; };
+		075B19CE2C31BF740026EEDE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19CD2C31BF740026EEDE /* Contact.swift */; };
+		075B19D02C31C2C50026EEDE /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19CF2C31C2C50026EEDE /* ContactDetailView.swift */; };
+		075B19D32C320B280026EEDE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19D22C320B280026EEDE /* TabBarView.swift */; };
+		075B19D62C320B7E0026EEDE /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19D52C320B7E0026EEDE /* ChatsView.swift */; };
+		075B19D92C320B920026EEDE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B19D82C320B920026EEDE /* ProfileView.swift */; };
+		07A20A482C31B09B0090B2E3 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A20A472C31B09B0090B2E3 /* ContactsView.swift */; };
+		45DCE1EC2C1F625A003C33CF /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DCE1EB2C1F625A003C33CF /* SheetView.swift */; };
+		45FD56F82C1E073D00908848 /* WildberriesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD56F72C1E073D00908848 /* WildberriesAppApp.swift */; };
+		45FD56FA2C1E073D00908848 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD56F92C1E073D00908848 /* ContentView.swift */; };
+		45FD56FC2C1E073F00908848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FD56FB2C1E073F00908848 /* Assets.xcassets */; };
+		45FD56FF2C1E073F00908848 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FD56FE2C1E073F00908848 /* Preview Assets.xcassets */; };
+		45FD57062C1E098000908848 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD57052C1E098000908848 /* OnboardingView.swift */; };
+		45FD57082C1E1D9400908848 /* TappableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD57072C1E1D9400908848 /* TappableText.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		070D19A12C371E6B00892729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FD56EC2C1E073D00908848 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 070D198E2C371E6900892729;
+			remoteInfo = WBWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		070D19A72C371E6B00892729 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				070D19A32C371E6B00892729 /* WBWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0735C74D2C39DAF100EE75B7 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		070D19852C35B8C500892729 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		070D19872C36AAEA00892729 /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
+		070D19892C36AD3800892729 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		070D198F2C371E6900892729 /* WBWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WBWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		070D19912C371E6900892729 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		070D19932C371E6900892729 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		070D19962C371E6900892729 /* WBWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidgetBundle.swift; sourceTree = "<group>"; };
+		070D19982C371E6900892729 /* WBWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		070D199A2C371E6900892729 /* WBWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidget.swift; sourceTree = "<group>"; };
+		070D199C2C371E6900892729 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		070D199E2C371E6B00892729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		070D19A02C371E6B00892729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		070D19A92C37FA4F00892729 /* WBWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBWidgetEntryView.swift; sourceTree = "<group>"; };
+		070D19B02C381C1900892729 /* ContactStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStore.swift; sourceTree = "<group>"; };
+		0735C7422C39DAF100EE75B7 /* OpenChatIntentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatIntentExtension.swift; sourceTree = "<group>"; };
+		0735C7442C39DAF100EE75B7 /* OpenChatIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatIntent.swift; sourceTree = "<group>"; };
+		0735C7462C39DAF100EE75B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		075B19CD2C31BF740026EEDE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		075B19CF2C31C2C50026EEDE /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		075B19D22C320B280026EEDE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		075B19D52C320B7E0026EEDE /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		075B19D82C320B920026EEDE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		07A20A472C31B09B0090B2E3 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		45DCE1EB2C1F625A003C33CF /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		45FD56F42C1E073D00908848 /* WildberriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildberriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FD56F72C1E073D00908848 /* WildberriesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildberriesAppApp.swift; sourceTree = "<group>"; };
+		45FD56F92C1E073D00908848 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45FD56FB2C1E073F00908848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45FD56FE2C1E073F00908848 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45FD57052C1E098000908848 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		45FD57072C1E1D9400908848 /* TappableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableText.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		070D198C2C371E6900892729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070D19942C371E6900892729 /* SwiftUI.framework in Frameworks */,
+				070D19922C371E6900892729 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FD56F12C1E073D00908848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		070D19902C371E6900892729 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				070D19912C371E6900892729 /* WidgetKit.framework */,
+				070D19932C371E6900892729 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		070D19952C371E6900892729 /* WBWidget */ = {
+			isa = PBXGroup;
+			children = (
+				070D19962C371E6900892729 /* WBWidgetBundle.swift */,
+				070D19982C371E6900892729 /* WBWidgetLiveActivity.swift */,
+				070D19A92C37FA4F00892729 /* WBWidgetEntryView.swift */,
+				070D199A2C371E6900892729 /* WBWidget.swift */,
+				070D199C2C371E6900892729 /* AppIntent.swift */,
+				070D199E2C371E6B00892729 /* Assets.xcassets */,
+				070D19A02C371E6B00892729 /* Info.plist */,
+			);
+			path = WBWidget;
+			sourceTree = "<group>";
+		};
+		0735C7412C39DAF100EE75B7 /* OpenChatIntent */ = {
+			isa = PBXGroup;
+			children = (
+				0735C7422C39DAF100EE75B7 /* OpenChatIntentExtension.swift */,
+				0735C7442C39DAF100EE75B7 /* OpenChatIntent.swift */,
+				0735C7462C39DAF100EE75B7 /* Info.plist */,
+			);
+			path = OpenChatIntent;
+			sourceTree = "<group>";
+		};
+		075B19CC2C31BF640026EEDE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				075B19CD2C31BF740026EEDE /* Contact.swift */,
+				070D19B02C381C1900892729 /* ContactStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		075B19D12C320B150026EEDE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				075B19D22C320B280026EEDE /* TabBarView.swift */,
+				070D19852C35B8C500892729 /* TabBarItem.swift */,
+				070D19872C36AAEA00892729 /* TabType.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		075B19D42C320B700026EEDE /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				075B19D52C320B7E0026EEDE /* ChatsView.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		075B19D72C320B840026EEDE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				075B19D82C320B920026EEDE /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		075B19DA2C320B970026EEDE /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				07A20A472C31B09B0090B2E3 /* ContactsView.swift */,
+				075B19CF2C31C2C50026EEDE /* ContactDetailView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		07A20A452C3192980090B2E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07A20A4A2C31B26D0090B2E3 /* Contact */,
+				07A20A492C31B1F30090B2E3 /* Onboarding */,
+				45FD56F92C1E073D00908848 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07A20A492C31B1F30090B2E3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				45FD57052C1E098000908848 /* OnboardingView.swift */,
+				45DCE1EB2C1F625A003C33CF /* SheetView.swift */,
+				45FD57072C1E1D9400908848 /* TappableText.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		07A20A4A2C31B26D0090B2E3 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				075B19DA2C320B970026EEDE /* Contacts */,
+				075B19D72C320B840026EEDE /* Profile */,
+				075B19D42C320B700026EEDE /* Chats */,
+				075B19D12C320B150026EEDE /* TabBar */,
+				070D19892C36AD3800892729 /* SearchTextField.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		45FD56EB2C1E073D00908848 = {
+			isa = PBXGroup;
+			children = (
+				45FD56F62C1E073D00908848 /* WildberriesApp */,
+				070D19952C371E6900892729 /* WBWidget */,
+				0735C7412C39DAF100EE75B7 /* OpenChatIntent */,
+				070D19902C371E6900892729 /* Frameworks */,
+				45FD56F52C1E073D00908848 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45FD56F52C1E073D00908848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45FD56F42C1E073D00908848 /* WildberriesApp.app */,
+				070D198F2C371E6900892729 /* WBWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45FD56F62C1E073D00908848 /* WildberriesApp */ = {
+			isa = PBXGroup;
+			children = (
+				45FD56FD2C1E073F00908848 /* Preview Content */,
+				075B19CC2C31BF640026EEDE /* Models */,
+				07A20A452C3192980090B2E3 /* View */,
+				45FD56F72C1E073D00908848 /* WildberriesAppApp.swift */,
+				45FD56FB2C1E073F00908848 /* Assets.xcassets */,
+			);
+			path = WildberriesApp;
+			sourceTree = "<group>";
+		};
+		45FD56FD2C1E073F00908848 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				45FD56FE2C1E073F00908848 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		070D198E2C371E6900892729 /* WBWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 070D19A42C371E6B00892729 /* Build configuration list for PBXNativeTarget "WBWidgetExtension" */;
+			buildPhases = (
+				070D198B2C371E6900892729 /* Sources */,
+				070D198C2C371E6900892729 /* Frameworks */,
+				070D198D2C371E6900892729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WBWidgetExtension;
+			productName = WBWidgetExtension;
+			productReference = 070D198F2C371E6900892729 /* WBWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		45FD56F32C1E073D00908848 /* WildberriesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FD57022C1E073F00908848 /* Build configuration list for PBXNativeTarget "WildberriesApp" */;
+			buildPhases = (
+				45FD56F02C1E073D00908848 /* Sources */,
+				45FD56F12C1E073D00908848 /* Frameworks */,
+				45FD56F22C1E073D00908848 /* Resources */,
+				070D19A72C371E6B00892729 /* Embed Foundation Extensions */,
+				0735C74D2C39DAF100EE75B7 /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				070D19A22C371E6B00892729 /* PBXTargetDependency */,
+			);
+			name = WildberriesApp;
+			productName = WildberriesApp;
+			productReference = 45FD56F42C1E073D00908848 /* WildberriesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45FD56EC2C1E073D00908848 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					070D198E2C371E6900892729 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					45FD56F32C1E073D00908848 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 45FD56EF2C1E073D00908848 /* Build configuration list for PBXProject "WildberriesApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45FD56EB2C1E073D00908848;
+			productRefGroup = 45FD56F52C1E073D00908848 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45FD56F32C1E073D00908848 /* WildberriesApp */,
+				070D198E2C371E6900892729 /* WBWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		070D198D2C371E6900892729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0735C7382C381E4D00EE75B7 /* Assets.xcassets in Resources */,
+				070D199F2C371E6B00892729 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FD56F22C1E073D00908848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FD56FF2C1E073F00908848 /* Preview Assets.xcassets in Resources */,
+				45FD56FC2C1E073F00908848 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		070D198B2C371E6900892729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070D19AC2C38130B00892729 /* Contact.swift in Sources */,
+				070D199B2C371E6900892729 /* WBWidget.swift in Sources */,
+				070D199D2C371E6900892729 /* AppIntent.swift in Sources */,
+				070D19972C371E6900892729 /* WBWidgetBundle.swift in Sources */,
+				0735C7392C39CD4700EE75B7 /* ContactDetailView.swift in Sources */,
+				070D19992C371E6900892729 /* WBWidgetLiveActivity.swift in Sources */,
+				070D19B22C381C4A00892729 /* ContactStore.swift in Sources */,
+				070D19AB2C37FA5700892729 /* WBWidgetEntryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FD56F02C1E073D00908848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FD56FA2C1E073D00908848 /* ContentView.swift in Sources */,
+				45FD56F82C1E073D00908848 /* WildberriesAppApp.swift in Sources */,
+				075B19D62C320B7E0026EEDE /* ChatsView.swift in Sources */,
+				45DCE1EC2C1F625A003C33CF /* SheetView.swift in Sources */,
+				070D19B12C381C1900892729 /* ContactStore.swift in Sources */,
+				07A20A482C31B09B0090B2E3 /* ContactsView.swift in Sources */,
+				075B19D02C31C2C50026EEDE /* ContactDetailView.swift in Sources */,
+				070D19862C35B8C500892729 /* TabBarItem.swift in Sources */,
+				070D198A2C36AD3800892729 /* SearchTextField.swift in Sources */,
+				45FD57062C1E098000908848 /* OnboardingView.swift in Sources */,
+				45FD57082C1E1D9400908848 /* TappableText.swift in Sources */,
+				075B19D32C320B280026EEDE /* TabBarView.swift in Sources */,
+				075B19D92C320B920026EEDE /* ProfileView.swift in Sources */,
+				075B19CE2C31BF740026EEDE /* Contact.swift in Sources */,
+				070D19882C36AAEA00892729 /* TabType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		070D19A22C371E6B00892729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 070D198E2C371E6900892729 /* WBWidgetExtension */;
+			targetProxy = 070D19A12C371E6B00892729 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		070D19A52C371E6B00892729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WBWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WBWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practica.WildberriesApp.WBWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		070D19A62C371E6B00892729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WBWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WBWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practica.WildberriesApp.WBWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45FD57002C1E073F00908848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45FD57012C1E073F00908848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45FD57032C1E073F00908848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WildberriesApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practica.WildberriesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45FD57042C1E073F00908848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WildberriesApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practica.WildberriesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		070D19A42C371E6B00892729 /* Build configuration list for PBXNativeTarget "WBWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070D19A52C371E6B00892729 /* Debug */,
+				070D19A62C371E6B00892729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FD56EF2C1E073D00908848 /* Build configuration list for PBXProject "WildberriesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FD57002C1E073F00908848 /* Debug */,
+				45FD57012C1E073F00908848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FD57022C1E073F00908848 /* Build configuration list for PBXNativeTarget "WildberriesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FD57032C1E073F00908848 /* Debug */,
+				45FD57042C1E073F00908848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45FD56EC2C1E073D00908848 /* Project object */;
+}
