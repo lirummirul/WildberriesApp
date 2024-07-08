@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  DatePicker
+
+  Created by Лада on 08.07.2024.
+  
+*/
+
+// Localizable.strings (German)
+"day_before_yesterday" = "Vorgestern";
+"yesterday" = "Gestern";
+"today" = "Heute";
+"tomorrow" = "Morgen";
+"day_after_tomorrow" = "Übermorgen";

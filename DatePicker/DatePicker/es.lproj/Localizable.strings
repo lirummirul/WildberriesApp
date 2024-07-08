@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  DatePicker
+
+  Created by Лада on 08.07.2024.
+  
+*/
+
+// Localizable.strings (Spanish)
+"day_before_yesterday" = "Anteayer";
+"yesterday" = "Ayer";
+"today" = "Hoy";
+"tomorrow" = "Mañana";
+"day_after_tomorrow" = "Pasado mañana";

@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  DatePicker
+
+  Created by Лада on 08.07.2024.
+  
+*/
+
+// Localizable.strings (French)
+"day_before_yesterday" = "Avant-hier";
+"yesterday" = "Hier";
+"today" = "Aujourd'hui";
+"tomorrow" = "Demain";
+"day_after_tomorrow" = "Après-demain";
+

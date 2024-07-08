@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  DatePicker
+
+  Created by Лада on 08.07.2024.
+  
+*/
+
+// Localizable.strings (Russian)
+"day_before_yesterday" = "Позавчера";
+"yesterday" = "Вчера";
+"today" = "Сегодня";
+"tomorrow" = "Завтра";
+"day_after_tomorrow" = "Послезавтра";
